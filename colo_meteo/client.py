@@ -24,7 +24,7 @@ class ColombianWeatherClient:
     def set_dataset(self,
                     dataset_id: str):
         """
-        Change the active dataset
+        Change the active dataset.
         """
         self.dataset_id = dataset_id
         return self
@@ -32,7 +32,7 @@ class ColombianWeatherClient:
     def set_limit(self,
                   limit: int):
         """
-        Establishes a new limit
+        Establishes a new limit.
         """
         self.limit = limit
         return self
@@ -40,7 +40,7 @@ class ColombianWeatherClient:
     def set_clause(self,
                   where_clause: int):
         """
-        Sets the clause which data need to meet to be called
+        Sets the clause which data need to meet to be called.
         """
         self.where = where_clause
         return self
@@ -48,7 +48,7 @@ class ColombianWeatherClient:
     def select_columns(self,
                        columns: str):
         """
-        Select the data variables for retrieving
+        Select the data variables for retrieving.
         """
         self.select = columns
         return self
@@ -85,7 +85,7 @@ class ColombianWeatherClient:
 
                     meta.append(dataset)
             
-            with open("datasets_meta_full.json", "w", encoding="utf-8") as f:
+            with open(f"{directory}/datasets_meta_full.json", "w", encoding="utf-8") as f:
                 json.dump(
                     meta,
                     f,
@@ -104,7 +104,7 @@ class ColombianWeatherClient:
                         }
                     meta.append(minimal_meta)
                     
-            with open("datasets_meta_mimnimal.json", "w", encoding="utf-8") as f:
+            with open(f"{directory}/datasets_meta_mimnimal.json", "w", encoding="utf-8") as f:
                 json.dump(
                     meta,
                     f,

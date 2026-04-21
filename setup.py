@@ -11,7 +11,7 @@ setup(
     description="A library for accessing Colombian WS data from IDEAM",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/baieta/colo-meteo",
+    url="https://github.com/cescpm/colo-meteo",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -39,7 +39,7 @@ setup(
     },
     keywords="colombia weather ideam meteorological data climate",
     project_urls={
-        "Bug Reports": "https://github.com/baieta/colo-meteo/issues",
-        "Source": "https://github.com/baieta/colo-meteo",
+        "Bug Reports": "https://github.com/cescpm/colo-meteo/issues",
+        "Source": "https://github.com/cescpm/colo-meteo",
     },
 )

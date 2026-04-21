@@ -4,14 +4,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="colo-meteo",
+    name="colo_meteo",
     version="1.0.0",
     author="Parera",
     author_email="cescparera12@gmail.com",
     description="A library for accessing Colombian WS data from IDEAM",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/cescpm/colo-meteo",
+    url="https://github.com/cescpm/colo_meteo",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -39,7 +39,7 @@ setup(
     },
     keywords="colombia weather ideam meteorological data climate",
     project_urls={
-        "Bug Reports": "https://github.com/cescpm/colo-meteo/issues",
-        "Source": "https://github.com/cescpm/colo-meteo",
+        "Bug Reports": "https://github.com/cescpm/colo_meteo/issues",
+        "Source": "https://github.com/cescpm/colo_meteo",
     },
 )
